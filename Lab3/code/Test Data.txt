@@ -1,0 +1,72 @@
+-------------Baseline: 80%-------------
+
+CO_P2_test_data1.txt (10%)
+	addi r1 r0 10  # r1 = 10	1%
+	addi r2 r0 4   # r2 = 4		1%	
+	slt r3 r1 r2   # r3 = 0		2%
+	add r4 r1 r2   # r4 = 14	2%
+	sub r5 r1 r2   # r5 = 6		2%
+	nor r5 r5 r0   # r5 = -7	2%
+
+CO_P2_test_data2.txt (10%)
+	addi r6 r0 3   # r6 = 3		1%
+	addi r7 r0 14  # r7 = 14	1%
+	and r8 r6 r7   # r8 = 2		1%
+	or r9 r6 r7    # r9 = 15	1%
+	sll r10 r9 3   # r10 = 120	2%
+	lui r11 1      # r11 = 65536	2%
+	srl r12 r11 5  # r12 = 2048	2%
+
+CO_P2_test_data3.txt (15%)
+	addi r1 r0 -5  # r1 = -5	1%
+	addi r2 r0 5   # r2 = 5		1%
+	slt r3 r1 r2   # r3 = 1		2%
+	slt r4 r2 r1   # r4 = 0		2%
+	add r5 r1 r2   # r5 = 0		3%
+	sub r6 r1 r2   # r6 = -10	3%
+	lui r7 -5      # r7 = -327680	3%
+	
+CO_P2_test_data4.txt (15%)
+	addi r1 r0 7   # r1 = 7		1%
+	addi r2 r0 0   # r2 = 0		1%
+	nor r3 r1 r0   # r3 = -8	2%
+	nor r4 r2 r0   # r4 = -1	2%
+	and r5 r1 r3   # r5 = 0		2%		
+	or r6 r1 r2    # r6 = 7		2%
+	sll r7 r1 5    # r7 = 224	2%
+	srl r8 r3 3    # r8 = 536870911	3%
+	
+CO_P2_test_data5.txt (15%)
+	addi r1 r0 10  # r1 = 10	1%
+	addi r2 r0 21  # r2 = 21	1%
+	and r3 r1 r0   # r3 = 0		2%
+	or r4 r1 r0    # r4 = 10	2%
+	and r5 r2 r0   # r5 = 0		2%
+	or r6 r2 r0    # r6 = 21	2%
+	and r7 r1 r2   # r7 = 0		2%
+	or r8 r1 r2    # r8 = 31	3%
+	
+CO_P2_test_data6.txt (15%)
+	lui r1 1       # r1 = 65536	1%
+    	lui r2 2       # r2 = 131072	1%
+    	sub r3 r1 r2   # r3 = -65536	2%
+    	addi r4 r0 105 # r4 = 105	2%
+    	add r5 r1 r4   # r5 = 655641	2%
+    	add r6 r1 r2   # r6 = 196608	2%
+    	srl r7 r1 6    # r7 = 1024	2%
+    	sll r8 r7 2    # r8 = 4096	3%
+	
+-------------Bonus: 10%-------------
+	
+CO_P2_test_data7.txt (Bonus 10%)
+	addi r1 r0 7   # r1 = 7
+	addi r2 r0 2   # r2 = 2
+	addi r6 r0 -4  # r6 = -4
+	add r3 r1 r2   # r3 = 9
+	sub r4 r2 r3   # r4 = -7
+	nor r5 r6 r0   # r5 = 3
+	sll r7 r5 2    # r7 = 12
+	sllv r8 r7 r1  # r8 = 1536	5%
+	srlv r9 r8 r5  # r9 = 192	5%
+	srl r10 r8 1   # r10 = 768
+
