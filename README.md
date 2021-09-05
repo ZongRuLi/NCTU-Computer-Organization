@@ -6,5 +6,5 @@ implemented some basic R-type, I-type instructions such as ADD, SUB, SLT, SLL, A
 ## Lab3: (Verilog)
 extended Lab2 with some J-type instructions and jump, branch, load, store,equal,not equal instructions
 
-## Lab4: (C)
+## Lab4: (C/C++)
 implemented a n-way-set-associative Cache Simulator with Least Recently Used(LRU) replacement policy. 
